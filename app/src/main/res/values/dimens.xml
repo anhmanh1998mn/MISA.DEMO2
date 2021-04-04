@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="size_large">280dp</dimen>
+    <dimen name="size_small">35dp</dimen>
+    <dimen name="height_large">45dp</dimen>
+    <dimen name="margin_small">18dp</dimen>
+    <dimen name="margin_top_small">8dp</dimen>
+    <dimen name="height_largee">70dp</dimen>
+    <dimen name="layout_small">100dp</dimen>
+    <dimen name="margin_smalll">8dp</dimen>
+    <dimen name="padding_smalll">6dp</dimen>
+    <dimen name="top_small">16dp</dimen>
+    <dimen name="left_small">23dp</dimen>
+    <dimen name="width_large">285dp</dimen>
+    <dimen name="height_large1">22dp</dimen>
+    <dimen name="layout_large">40dp</dimen>
+    <dimen name="layout_height_large">30dp</dimen>
+    <dimen name="layout_large_height">120dp</dimen>
+    <dimen name="space_small">4dp</dimen>
+    <dimen name="space1_small">2dp</dimen>
+    <dimen name="font_google">80dp</dimen>
+</resources>

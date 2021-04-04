@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.ClickStatus"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/frmItemListRestaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivImageRestaurant"
+            android:layout_width="@dimen/layout_small"
+            android:layout_height="@dimen/layout_small"
+            android:layout_margin="@dimen/margin_smalll"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/ivState"
+            style="@style/Theme.RestaurantStatus"
+            android:layout_width="@dimen/left_small"
+            android:layout_height="@dimen/left_small"
+            android:src="@drawable/ic_state_restaurant" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llRestaurantInfo"
+        style="@style/Theme.ItemRestaurant"
+        android:layout_width="@dimen/width_large"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toRightOf="@+id/frmItemListRestaurant"
+        app:layout_constraintRight_toLeftOf="@+id/frmMarker"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvRestaurantName"
+            style="@style/Theme.RestaurantName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/rbStar"
+                style="@style/Theme.RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_small"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="@dimen/padding_small"
+                android:progressDrawable="@drawable/view_rating_bar"
+                android:rating="3" />
+
+            <TextView
+                android:id="@+id/tvCountRate"
+                style="@style/Theme.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRestaurantLocation"
+            style="@style/Theme.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvSpace"
+            style="@style/Theme.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_compass"
+            android:drawablePadding="@dimen/space_small"
+            android:drawableTint="@color/gray" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frmMarker"
+        style="@style/Theme.ClickStatus"
+        android:layout_width="@dimen/layout_large"
+        android:layout_height="@dimen/layout_large"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:id="@+id/ivMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_small"
+            android:src="@drawable/ic_bookmarks" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginTop="@dimen/top_small"
+        android:background="@color/grey"
+        app:layout_constraintTop_toBottomOf="@+id/llRestaurantInfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbToolbar"
+        style="@style/Theme.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_large"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="6">
+
+            <ImageButton
+                style="@style/Theme.Menu"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_small"
+                android:layout_weight="0.7"
+                android:src="@drawable/ic_menu_previous" />
+
+            <TextView
+                style="@style/Theme.SearchView"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_small"
+                android:layout_weight="4.5"
+                android:drawableLeft="@drawable/ic_search"
+                android:text="@string/search_text" />
+
+            <ImageButton
+                android:id="@+id/ibLocationMarker"
+                style="@style/Theme.Menu"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_menu_pager_folded" />
+
+            <ImageButton
+                android:id="@+id/ibListRestaurant"
+                style="@style/Theme.Menu"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_small"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_menu_location"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <!--    Lý do gg map bị lác : nestedScroll-->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tbToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/Theme.TextColorService"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_adjustment"
+                        android:drawableTint="@color/purple_500" />
+
+                    <TextView
+                        android:id="@+id/tvCountService"
+                        style="@style/Theme.ServiceTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/view_service_total"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvService"
+                    style="@style/Theme.ListHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/frmContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

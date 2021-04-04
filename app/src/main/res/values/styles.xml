@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SearchView" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center|left</item>
+        <item name="android:paddingLeft">@dimen/padding_small</item>
+        <item name="android:drawablePadding">@dimen/padding_small</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@drawable/view_search</item>
+    </style>
+
+    <style name="Theme.HorizontalLine" parent="Widget.AppCompat.TextView">
+        <item name="background">@color/grey</item>
+        <item name="android:layout_height">8dp</item>
+    </style>
+
+    <style name="Theme.Menu" parent="Widget.AppCompat.ImageButton">
+        <item name="background">@null</item>
+        <item name="tint">@color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Theme.TextColorService" parent="Widget.AppCompat.TextView">
+        <item name="android:padding">4dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Theme.ClickStatus" parent="Widget.AppCompat.TextView">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Theme.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/purple_500</item>
+    </style>
+
+    <style name="Theme.ServiceTotal" parent="Widget.AppCompat.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_small</item>
+    </style>
+
+    <style name="Theme.ListHorizontal" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="Theme.RestaurantStatus" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_gravity">right|bottom</item>
+        <item name="android:padding">@dimen/padding_smalll</item>
+    </style>
+
+    <style name="Theme.ItemRestaurant" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_marginTop">@dimen/top_small</item>
+        <item name="android:layout_marginLeft">@dimen/left_small</item>
+    </style>
+
+    <style name="Theme.RestaurantName" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Theme.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_margin">@dimen/space1_small</item>
+        <item name="android:layout_marginLeft">@dimen/space1_small</item>
+    </style>
+
+    <style name="Theme.RatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:layout_margin">@dimen/space_small</item>
+
+    </style>
+
+    <style name="Theme.CardViewCurrentLocation" parent="Widget.AppCompat.ImageButton">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_margin">@dimen/padding_small</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="cardCornerRadius">@dimen/size_small</item>
+    </style>
+
+    <style name="Theme.CurrentLocation" parent="Widget.AppCompat.ImageButton">
+        <item name="android:clickable">true</item>
+        <item name="tint">@color/foot_gray</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+</resources>

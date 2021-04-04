@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="search_text"><font color="black">Tất cả địa điểm</font><font color="grey"> Gần tôi</font></string>
+</resources>
